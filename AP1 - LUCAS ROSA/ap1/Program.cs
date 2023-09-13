@@ -27,10 +27,8 @@
         categoria_imc = "peso normal";
     }else if(imc <= 29){
         categoria_imc = "sobrepeso";
-    }else if(imc <= 34){
-        categoria_imc = "obeso";
     }else{
-        categoria_imc = "erro de digitação";
+        categoria_imc = "obeso";
     }
 
     //VE A IDADE DA PESSOA E VE EM QUAL CATEGORIA SE ENCAIXA
@@ -43,10 +41,8 @@
         faixa_etaria = "Adolecente";
     }else if(idade <= 59){
         faixa_etaria = "Adulto";
-    }else if(idade >= 60){
-        faixa_etaria = "Idoso";
     }else{
-        faixa_etaria = "ai é complicado";
+        faixa_etaria = "Idoso";
     }
     
     Console.WriteLine($"{nome}, {idade}, {imc}, {faixa_etaria}, {categoria_imc}");
